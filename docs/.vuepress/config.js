@@ -9,8 +9,12 @@ export default defineUserConfig({
   description: '自动化 Cursor 注册机',
 
   theme: defaultTheme({
-    logo: '/logo.png'
+    logo: '/logo.png',
+    sidebar: false
   }),
 
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {},
+    vuePluginOptions: {},
+  }),
 })
